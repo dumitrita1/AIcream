@@ -1,0 +1,223 @@
+/* styles.css pentru AIcream */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+.header {
+    background-color: #ff6347;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    color: #ecf0f1;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+.div-hero{
+    background-color: hsl(204, 70%, 53%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 50px;
+   overflow: hidden;
+ 
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1200px;
+    color: #fff;
+}
+
+.hero-text h2 {
+    font-size: 4.0rem;
+    margin: 0 0 15px;
+}
+
+.hero-text p {
+    font-size: 1.7rem;
+    margin: 0 0 20px;
+}
+
+.hero-image img {
+    rotate: 340deg;
+    width: 500px;
+    max-width: 100%;
+    margin-bottom: -70px;
+    
+}
+
+.flavors {
+    padding: 40px 20px;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+.flavors h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.flavor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.flavor-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.flavor-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.flavor-card img {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.flavor-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+}
+
+.flavor-card p {
+    padding: 0 15px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.more-button {
+    display: block;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+    transition: background-color 0.3s;
+}
+
+.more-button:hover {
+    background-color: #2980b9;
+}
+
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+
+/* Flavor Page Styles */
+.flavor-page {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.flavor-page h2 {
+    font-size: 2.5em;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+.flavor-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flavor-content img {
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.flavor-content img:hover {
+    transform: scale(1.05);
+}
+
+.flavor-description {
+    max-width: 600px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.flavor-description p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .flavor-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .flavor-description {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .flavor-content img {
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #ff6347;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
